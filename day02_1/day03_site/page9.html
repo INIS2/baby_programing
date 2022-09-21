@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            /* remove 'dots' of list */
+            list-style: none;
+            /* drop down >> line left to right */
+            float: left;
+            /* padding = space */
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            border-radius: 50px;
+        }
+        /* border-radius에서 순서는 시계방향으로 1.좌상,2.우상,3.우하,4.좌하 */
+        /* li:first-child{
+            border-radius:50px 0 0 50px ;
+        }
+        li:last-child{
+            border-radius: 0 50px 50px 0;
+        } */
+
+        /* nth=몇번째?, child자식? li의 자식찾기NONO, li가 ul의 몇번째 자식? YYY */
+        li:nth-child(2n){
+            background: orange;
+        }
+        li:nth-child(2n+1){
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>회원가입</li>
+        <li>제품정보</li>
+        <li>게시판</li>
+        <li>장바구니</li>
+    </ul>
+</body>
+</html>

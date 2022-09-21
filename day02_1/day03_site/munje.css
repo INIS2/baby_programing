@@ -1,0 +1,22 @@
+/* 기본 선택자 3개 */
+/* tag */
+body {
+    background-color: yeazure;
+}
+
+tr {
+    text-align: center;
+}
+input{
+    background-color: pink;
+}
+
+/* class */
+.index {
+    color: blue;
+}
+
+/* id */
+#button {
+    color: green;
+}
