@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function len_check() {
+            id = document.getElementById('id').value
+            if(id.length >= 5){
+                result = "ok"
+            }else{
+                result = "5글자 미만입니다. 재입력해주세요"
+            }
+            d1.innerHTML = '<font color=red>' + result + '</font>'
+            return  result
+        }
+        function pw_check() {
+            pw = document.getElementById('pw').value
+            pw2 = document.getElementById('pw2').value
+            
+            if( pw == pw2 ){
+                result = '패스워드 일치'
+            }else{
+                result = '패스워드 불일치'
+            }
+            d2.innerHTML = '<font color=red>' + result + '</font>'
+            return  result
+        }
+        function final() { 
+            if(len_check() == 'ok' && pw_check() == '패스워드 일치'){
+                final_result = '회원가입 완료'
+            }else{
+                final_result = '검증을 통과해주세요'
+            }
+            d3.innerHTML = '<font color=red>' + final_result + '</font>'
+        }
+    
+    </script>
+</head>
+<body>
+    <h3>회원가입</h3>
+    <hr>
+    아이디 : <input type="text" id="id"> <button onclick="len_check()">글자수 체크</button> <br> 
+    패스워드 : <input type="text" id="pw"> <br>
+    패스워드 검증 : <input type="text" id="pw2"> <button onclick="pw_check()">패스워드 동일</button> <br>
+    <button onclick="final()">회원가입</button>
+    <hr>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+</body>
+</html>

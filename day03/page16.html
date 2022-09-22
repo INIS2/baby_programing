@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function plus() {
+            n1 = document.getElementById('n1').value
+            n2 = document.getElementById('n2').value
+        
+            n1 = parseInt(n1)
+            n2 = parseInt(n2)
+            result = n1 + n2
+
+            alert('두 수의 합은 ' + result + ' 입니다')
+        }
+
+        function login() {
+            id = document.getElementById('id').value
+            pw = document.getElementById('pw').value
+
+            // if(id == 'root' && pw == '1234'){
+            //     alert('로그인 되었습니다')
+            // }else{
+            //     alert('잘못된 아이디 또는 비밀번호 입니다')
+            // }
+
+            // if(id == 'root' && pw == '1234'){
+            //     result = '로그인 성공'
+            // }else{
+            //     result = '로그인 실패'
+            // }
+            // alert('로그인 결과는... ' + result)
+
+            // if(id == 'root' && pw == '1234'){
+            //     result = '로그인 성공'
+            // }else{
+            //     result = '로그인 실패'
+            // }
+            // // d1의 HTML에 뒷줄 그대로 들어감
+            // d1.innerHTML = '<font colo=red>' + result + '</font>'
+
+            if(id == 'root' && pw == '1234'){
+                result = '<img src=giphy.gif width=250 height=250>'
+            }else{
+                result = '<img src=red.png width=250 height=250>'
+            }
+            // d1의 HTML에 뒷줄 그대로 들어감
+            d1.innerHTML = result 
+
+            
+        }
+
+    </script>
+</head>
+<body>
+    숫자1 : <input type="text" name="n1" id="n1"><br>
+    숫자2 : <input type="text" name="n2" id="n2"><br>
+    <button onclick="plus()">숫자 더하기</button>
+    <hr>
+    ID : <input type="text" name="id" id="id"><br> 
+    PW : <input type="text" name="pw" id="pw"><br> 
+    <button onclick="login()">로그인</button>
+    <hr>
+    <div id="d1"></div>
+</body>
+</html>

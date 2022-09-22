@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //이름과 나이를 RAM에 저장
+    var name = '홍길동' //'',"" : 문자열
+    var age = 100 // 숫자는 또옴표 넣으면 안됨
+    age = 101
+    // 숫자 or 문자 취급 기준??/ 연산의 대상이 되는가? 자릿수를 
+    var tel = '0101112222' // 이대로면 맨 앞의 0이 없어지고, 연산을 안하니까 string 취급
+    var sn = '20040115' //0115가 백십오... 가 아니라 1월 15일이고 싶기에. 나중에 빼쓰면 된다
+    var pn = '07165'
+
+    alert('이름은' + name + '이고, 나이는' + age)
+
+    const PI = 3.14 // const는 상수라서 항상 변하지 않고, 대문자로 넣는다
+    //const PI = 3.15
+
+    // 겹치면? 앞에것 사라짐
+    //변수 만들기 = var tel = 선언
+    var tel = '0101112222'
+    var tel = '02445456' //재선언 가능! 근데 나중가면 헷갈림
+    //alert(tel)
+
+    let phone = '11111' //선언
+    phone = '33333' // 재할당(대입, 값을 변수에 넣음) 가능
+    let phone = '22222' // 재선언 불가
+    
+
+</script>
+<body>
+    
+</body>
+</html>
