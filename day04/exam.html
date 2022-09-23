@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('#img_bt').click(function() {
+               $('#result').append('<img src=hi_img.png width=150 height=150> + <br>')
+            })
+            $('#bt1').click(function() {
+                dv1 = $('#dat1').val()
+                $('#result').append(dv1 + '<br>')
+            })
+            $('#bt2').click(function() {
+                dv2 = $('#dat2').val()
+                $('#result').append('<img src=hi_img.png width=150 height=150>')
+                $('#result').append(dv2 + '<br>')
+            })
+        })
+    </script>
+</head>
+<body>
+   <button id="img_bt">이미지 추가</button> <br>
+    댓글1 : <input id="dat1"> <button id="bt1"> 댓글 추가 </button> <br>
+    댓글2 : <input id="dat2"> <button id="bt2"> 이미지+댓글 추가 </button>
+    <hr>
+   <div id="result"></div>
+</body>
+</html>
